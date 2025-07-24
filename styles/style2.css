@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #131B23;
+    --cor-secundaria: #DCDCDD;
+    --cor-terciaria: #D35F8F;
+    --cor-quartenaria: #3B60E4;
+    --cor-quinquenaria: #1D2935;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-quartenaria);
+}
+
+.conteudo__curriculo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.conteudo__curriculo__titulo {
+    padding: 5% 0 0 15%;
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+
+.conteudo__curriculo__destaque{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.conteudo__curriculo__subtitulo {
+    font-weight: 700;
+}
+
+.conteudo__curriculo__blocos {
+    padding: 2% 15%;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.94rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    line-height: 36px;
+}
+
+.conteudo__curriculo__blocos > div {
+    flex: 1;
+}
+
+.conteudo__curriculo__bloco1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.conteudo__curriculo__bloco2 {
+    font-size: 0.94rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape{
+    padding: 23.4px;
+    height: 4px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-quinquenaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho {
+    padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .conteudo__curriculo__blocos {
+        column-gap: 4.37rem;
+    }
+}
